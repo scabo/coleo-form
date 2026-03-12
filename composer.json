@@ -1,0 +1,39 @@
+{
+    "name": "scabo/coleo-form",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Sergey Shevyakov",
+            "email": "scabo.dev@gmail.com"
+        }
+    ],
+    "description": "HTML Form validation and filtration library",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4",
+        "laminas/laminas-filter": "^3.4",
+        "respect/validation": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.2",
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit  --display-warnings",
+        "inspect": "vendor/bin/phpstan analyse",
+        "style_check": "vendor/bin/phpcs",
+        "style_fix": "vendor/bin/phpcbf"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scabo\\Form\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ScaboTest\\Form\\": "tests/"
+        }
+    }
+}

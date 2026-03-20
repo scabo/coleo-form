@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Form;
 
 use Exception;
@@ -17,10 +19,7 @@ class HtmlForm implements FormInterface
     private $data = [];
     private $errors = [];
 
-    /**
-     * @var FormField
-     */
-    private $currentField = null;
+    private ?string $currentField = null;
 
     /**
      * FormField[]

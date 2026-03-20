@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Form\Checker;
 
 /**
@@ -17,7 +19,7 @@ interface CheckerInterface
     public function addRule(string $name, ...$options): self;
 
     /**
-     * Add error message template for checking rule. 
+     * Add error message template for checking rule.
      *
      * @param string $name Name of checking rule
      * @param string $tpl Error template
@@ -27,10 +29,10 @@ interface CheckerInterface
 
     /**
      * Check a value using chain of rules
-     * 
-     * It returns TRUE if value is valid or 
+     *
+     * It returns TRUE if value is valid or
      * if it is not valid - error messages array
-     * 
+     *
      * @param mixed $value
      * @return bool|array
      */

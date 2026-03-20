@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Scabo\\Form\\": "src/"
+            "Coleo\\Form\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ScaboTest\\Form\\": "tests/"
+            "ColeoTest\\Form\\": "tests/"
         }
     }
 }

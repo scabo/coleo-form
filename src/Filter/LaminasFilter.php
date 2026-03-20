@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Form\Filter;
 
 /**
@@ -8,7 +10,9 @@ namespace Coleo\Form\Filter;
 class LaminasFilter implements FilterInterface
 {
     /**
-     * @var Laminas\Filter\FilterInterface[]
+     * Undocumented variable
+     *
+     * @var iterable<\Laminas\Filter\FilterInterface>
      */
     private $rules = [];
 

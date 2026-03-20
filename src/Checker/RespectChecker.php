@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Form\Checker;
 
 use Respect\Validation\Validator;
@@ -49,7 +51,7 @@ class RespectChecker implements CheckerInterface
     /**
      * @inheritDoc
      *
-     * @param mided $value
+     * @param mixed $value
      * @return bool|array
      */
     public function check($value): bool|array

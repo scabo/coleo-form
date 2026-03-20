@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Form;
 
 /**
@@ -17,14 +19,14 @@ interface FormInterface
 
     /**
      * Get filtered and checked data
-     * 
-     * If name is passed it returns one value by name, 
-     * else it returns array with all data 
      *
-     * @param string? $name
+     * If name is passed it returns one value by name,
+     * else it returns array with all data
+     *
+     * @param string|null $name
      * @return mixed
      */
-    public function getData($name = null): mixed;
+    public function getData(?string $name = null): mixed;
 
     /**
      * Initialize form field

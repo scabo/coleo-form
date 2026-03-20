@@ -16,7 +16,7 @@ class HtmlformFactoryTest extends TestCase
 {
     public function testCreate()
     {
-        $htmlFormFactory = new HtmlFormFactory(new LaminasFilterFactory, new RespectCheckerFactory);
+        $htmlFormFactory = new HtmlFormFactory(new LaminasFilterFactory(), new RespectCheckerFactory());
         $htmlForm = $htmlFormFactory->create();
         $this->assertInstanceOf(HtmlForm::class, $htmlForm);
     }
